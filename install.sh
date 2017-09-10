@@ -209,15 +209,15 @@ die () {
 installation () {
     prerequisites
     helpers
-    dbcreate
+    #dbcreate
     receiver
     analyzer  
     create_dirs
 }
 
-banner
+#banner
 printf "If anything goes wrong, delete newly created directory 'shiva' and start again\n"
-read -p "Press enter to continue installation...";
+#read -p "Press enter to continue installation...";
 if [ "$UID" == "0" ] || [ "$EUID" == "0" ]
 then
     printf "\n[!] Drop your privileges and run as non-root user.....aborting installation\n\n"
